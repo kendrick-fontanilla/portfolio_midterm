@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: goldenrod;
+    padding: 10px 20px;
+    color: white;
+}
+
+.nav-l {
+    font-family:'Roboto', sans-serif;
+    font-size: 1.0em;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+.nav-r {
+    display: flex;
+    gap: 20px; 
+    font-size: 15px;
+}
+
+.clickablelinks {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.clickablelinks:hover {
+    color: #8f6e6e; 
+}
+
+
+/* Banner Styling */
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('nana.png');
+    animation: moveBg 40s linear infinite;
+    background-repeat: repeat;
+    background-size: 500px;
+    opacity: 50%;
+    z-index: -1;
+    background-color: #ccc1c1;
+    color: #000000; 
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes moveBg {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 2500px 2500px; 
+    }
+}
+
+
+.banner h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.banner p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 20px;
+  }
+  
+  .box {
+    aspect-ratio: 8/10;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .box:hover {
+    transform: scale(1.05); 
+  }
+  
+  .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
