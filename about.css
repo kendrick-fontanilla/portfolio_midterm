@@ -1,26 +1,134 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(31, 29, 26);
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f1d1a;
+    padding: 20px 20px;
+}
+
+/* LEFT SIDE - NAME */
+.nav-l {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+.nav-l,
+.nav-l:visited,
+.nav-l:hover,
+.nav-l:active {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-r {
+    display: flex;
+    gap: 20px;
+}
+
+/* LINKS STYLE */
+.clickablelinks {
+    font-size: 0.85em;
+    text-decoration: none;
+    color: #888888;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    font-weight: normal;
+}
+
+/* ACTIVE PAGE (e.g. WORK is highlighted) */
+.clickablelinks.active {
+    color: white;
+    font-weight: bold;
+}
+
+/* Hover effect */
+.clickablelinks:hover {
+    color: #b3b3b3;
+}
+
+/* Banner Styling */
+
+
 
 .container {
-    display: flex; /* Enable Flexbox */
-    justify-content: space-between; /* Space boxes evenly */
-    align-items: center; /* Center boxes vertically */
-    padding: 20px;
-    background-color: #fff;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.box {
-    flex: 1; /* Distribute available space equally */
-    background-color: #f1b9b9;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgb(31, 29, 26); /* optional, your bg color */
+  }
+  
+  .box {
+    width: 250px;
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    align-items: center;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    padding-top: 15px;
+  }
+  
+
+.section-heading {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: white;
+  margin-bottom: 20px;
+  padding-top: 30px;
 }
+  
+.name {
+    color: white;
+    font-size: 1.1em;
+    margin-top: 40px;
+  }
+
+  .info{
+    color: white;
+    font-size: 0.8em;
+    letter-spacing: 1.0px;
+  
+  }
+
+  .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(31, 29, 26);
+    padding: 10px 10px;
+    color: white;
+    padding-top: 100px;
+  }
+  
+  .footer-text{
+    align-items: center;
+    font-size: 0.75em;
+    color: #888888; /* Brighter muted gray */
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+ 
